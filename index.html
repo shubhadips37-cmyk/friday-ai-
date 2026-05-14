@@ -494,7 +494,7 @@ async function askFriday(userText){
   try{
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
-      headers:{'Content-Type':'application/json'},index.html
+      headers:{'Content-Type':'application/json'},index.html,x-api-key': 'AIzaSyDFykcI1qUYAPfAhiV4oT1Yn-phFcnjzoM'},
       body:JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:1000,
